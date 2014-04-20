@@ -1,0 +1,89 @@
+actors:
+   - id: 0
+   name: John
+   stamina: 20
+
+   - id: 1
+   name: Adam
+   stamina: 10
+
+items:
+   - id: 6
+   name: stick
+   description: branch of a yew tree
+
+   - id: 15
+   name: cheesecake
+   description: a delicious raspberry cheesecake
+
+   - id: 42
+   name: ultimate answer
+   description: Ultimate answer to the question of life, the universe and everything.
+
+   - id: 73
+   name: "73"
+   description: The most beautiful number
+
+povs:
+   - id: 0
+   name: John's View
+   actor: 0
+
+   chapters:
+      - id: 0
+      name: Morning Time
+
+      pages:
+         - id: 0
+         name: Waking up
+         text: It is 7am. The sun shines through the window.
+         choices:
+
+            - id: 0
+            text: Hit the snooze
+            link: 0-0-1
+
+            - id: 1
+            text: Get up
+            link: 0-0-2
+
+         - id: 1
+         name: Waking up again
+         text: The sun still shines through the window.
+         choices:
+
+            - id: 0
+            text: Hit the snooze
+            link: 0-0-1
+
+            - id: 1
+            text: Get up
+            link: 0-0-2
+
+         - id: 2
+         name: Breakfast
+         text: Famished. Choose your poison.
+         choices:
+
+            - id: 0
+            text: teh boozes
+            link: 1-0-0
+
+   - id: 1
+   name: Adam's View
+   actor: 1
+
+   chapters:
+      - id: 0
+      name: Closing Time
+
+      pages:
+         - id: 0
+         name: Clocking out
+         text: 5pm. There's still work on the desk...
+         choices:
+
+            - id: 0
+            text: Stay late
+            link: 0-0-2
+
